@@ -7,5 +7,5 @@ const bot = new telegramApi(token, {polling: true})
 bot.on('message', msg => {
 	const text = msg.text;
 	const chatId =  msg.chat.id
-	bot.sendMessage(chatId, `Привет, я не расслышал... Ты ${text} сказал`)
+	bot.sendMessage(chatId, `Привет, я не расслышал... Ты ${text} сказал?`)
 })
